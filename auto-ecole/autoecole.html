@@ -1,0 +1,66 @@
+<!--
+
+Voici le site d'auto-école réalisé par Mohamed Tahiri, TC02.
+
+Ce fichier est la page d'accueil de mon site d'auto-école.
+Je vais détailler le design HTML sur ce fichier et ce sera valable pour tout le reste car le modèle est le même.
+
+Toutes les pages (y compris les bonus) ont été effectuées.
+J'ai ajouté 3 pages de mon plein gré, accessibles en cliquant sur Thèmes et Séances et Supprimer dans l'onglet Séances.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<!-- La fenêtre sera nommée Auto-École -->
+	<title>Auto-École</title>
+	<!-- On lie notre fichier HTML avec une feuille CSS nommée file.css. -->
+	<link rel="stylesheet" href="file.css">
+</head>
+<body>
+
+<!-- On partage le site (un grand div) en deux parties (deux sous-div) :
+				une barre latérale verticale à gauche et une page à droite sur la place qu'il reste. -->
+<div class="site">
+    <!-- Barre latérale, à inclure dans tous les fichiers -->
+    <div class="barreGauche">
+        <ul>
+					<!-- la classe active permet d'éclaircir la case <li>
+				 			 la classe sousactive permet de mettre le texte en blanc. -->
+          <a href="autoecole.html" class="active"><li><h2>Auto-École</h2></li></a>
+						<!-- la classe theme permet de grossir la case de telle sorte à ce qu'elle soit plus grosse que les sous-thèmes <li>
+					 			 la classe soustheme permet de faire un formalisme pour les sous-thèmes. -->
+            <a href="consultation_eleve.php" class="theme"><li>Élèves</li></a>
+              <a href="ajout_eleve.html" class="soustheme"><li>Inscrire</li></a>
+              <a href="visualisation_calendrier_eleve.php" class="soustheme"><li>Calendrier</li></a>
+
+            <a href="consultation_theme.php" class="theme"><li>Thèmes</li></a>
+              <a href="ajout_theme.html" class="soustheme"><li>Ajouter</li></a>
+              <a href="suppression_theme.php" class="soustheme"><li>Supprimer</li></a>
+
+            <a href="consultation_seance.php" class="theme"><li>Séances</li></a>
+              <a href="ajout_seance.php" class="soustheme"><li>Créer</li></a>
+              <a href="validation_seance.php" class="soustheme"><li>Noter</li></a>
+              <a href="inscription_eleve.php" class="soustheme"><li>Inscrire un élève</li></a>
+              <a href="desinscription_seance.php" class="soustheme"><li>Désinscrire</li></a>
+              <a href="suppression_seance.php" class="soustheme"><li>Supprimer</li></a>
+        </ul>
+    </div>
+
+    <!-- Page de droite -->
+    <div class="pageDroite">
+      <h1>Présentation</h1>
+					<p>Bienvenue sur le site d'auto-école réalisé par Mohamed Tahiri. Vous pouvez le gérer et le modifier à votre guise.</p>
+
+					<!-- Ce div permet de centrer une photo de voiture sur la page d'accueil. -->
+					<div style="text-align: center;">
+						<img src="logo_autoecole.png" width="400px" style="margin-top:30px">
+					</div>
+
+    </div>
+</div>
+</body>
+</html>

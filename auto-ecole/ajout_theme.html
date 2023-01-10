@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajout d'un thème</title>
+	<link rel="stylesheet" href="file.css">
+</head>
+<body>
+
+<div class="site">
+    <!-- Barre latérale, à inclure dans tous les fichiers -->
+    <div class="barreGauche">
+        <ul>
+          <a href="autoecole.html" class="active"><li><h2>Auto-École</h2></li></a>
+            <a href="consultation_eleve.php" class="theme"><li>Élèves</li></a>
+              <a href="ajout_eleve.html" class="soustheme"><li>Inscrire</li></a>
+              <a href="visualisation_calendrier_eleve.php" class="soustheme"><li>Calendrier</li></a>
+            <a href="consultation_theme.php" class="sousactive theme"><li>Thèmes</li></a>
+              <a href="ajout_theme.html" class="active soustheme"><li>Ajouter</li></a>
+              <a href="suppression_theme.php" class="soustheme"><li>Supprimer</li></a>
+            <a href="consultation_seance.php" class="theme"><li>Séances</li></a>
+              <a href="ajout_seance.php" class="soustheme"><li>Créer</li></a>
+							<a href="validation_seance.php" class="soustheme"><li>Noter</li></a>
+              <a href="inscription_eleve.php" class="soustheme"><li>Inscrire un élève</li></a>
+              <a href="desinscription_seance.php" class="soustheme"><li>Désinscrire</li></a>
+              <a href="suppression_seance.php" class="soustheme"><li>Supprimer</li></a>
+        </ul>
+    </div>
+
+    <!-- Page de droite -->
+    <div class="pageDroite">
+      <form action="ajouter_theme.php" method="post">
+
+				<h1>Ajout d'un thème</h1>
+
+        <h2>Insertion du nouveau thème :</h2> <br>
+
+        <label for="nom">Nom de thème : </label>
+				<input type="text" id="nom" name="nom" minlength="3" maxlength="30" size="30" required> <br> <br>
+
+        <label for="descriptif">Description du thème : </label>
+				<textarea rows="5" id="descriptif" name="descriptif" style="width: 100%;" required></textarea> <br> <br>
+
+        <input value="Valider" type="submit">
+        <input value="Effacer" type="reset">
+      </form>
+    </div>
+</div>
+</body>
+</html>

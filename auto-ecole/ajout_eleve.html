@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajout d'un élève</title>
+	<link rel="stylesheet" href="file.css">
+</head>
+<body>
+
+<div class="site">
+    <!-- Barre latérale, à inclure dans tous les fichiers -->
+    <div class="barreGauche">
+        <ul>
+          <a href="autoecole.html" class="logo active"><li><h2>Auto-École</h2></li></a>
+            <a href="consultation_eleve.php" class="sousactive theme"><li>Élèves</li></a>
+              <a href="ajout_eleve.html" class="active soustheme"><li>Inscrire</li></a>
+              <a href="visualisation_calendrier_eleve.php" class="soustheme"><li>Calendrier</li></a>
+            <a href="consultation_theme.php" class="theme"><li>Thèmes</li></a>
+              <a href="ajout_theme.html" class="soustheme"><li>Ajouter</li></a>
+              <a href="suppression_theme.php" class="soustheme"><li>Supprimer</li></a>
+            <a href="consultation_seance.php" class="theme"><li>Séances</li></a>
+              <a href="ajout_seance.php" class="soustheme"><li>Créer</li></a>
+							<a href="validation_seance.php" class="soustheme"><li>Noter</li></a>
+              <a href="inscription_eleve.php" class="soustheme"><li>Inscrire un élève</li></a>
+              <a href="desinscription_seance.php" class="soustheme"><li>Désinscrire</li></a>
+              <a href="suppression_seance.php" class="soustheme"><li>Supprimer</li></a>
+        </ul>
+    </div>
+
+    <!-- Page de droite -->
+    <div class="pageDroite">
+      <form action="ajouter_eleve.php" method="post">
+				<h1>Ajout d'un élève</h1>
+
+        <h2>Informations personnelles :</h2> <br>
+
+        <label for="prenom">Prénom : </label>
+				<input type="text" id="prenom" name="prenom" minlength="2" maxlength="30" size="30" required> <br> <br>
+
+        <label for="nom">Nom : </label>
+				<input type="text" id="nom" name="nom" minlength="2" maxlength="30" size="30" required> <br> <br> <br>
+
+        <label for="datenaiss">Date de naissance : </label>
+				<input type="date" id="datenaiss" name="datenaiss" required> <br> <br> <br>
+
+        <input value="Valider" type="submit">
+        <input value="Effacer" type="reset">
+      </form>
+
+    </div>
+</div>
+</body>
+</html>
