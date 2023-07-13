@@ -14,10 +14,10 @@ $date = date("Y\-m\-d");
 $dateAffichee = date("d/m/Y");
 
 // on initialise la connexion à la base de données.
-$dbhost = "tuxa.sme.utc";
-$dbuser = "nf92a081";
-$dbpass = "Kj6JxYKj";
-$dbname = "nf92a081";
+$dbhost = "dbhost";
+$dbuser = "dbuser";
+$dbpass = "dbpass";
+$dbname = "dbname";
 
 // on se connecte à la base de données.
 $connect = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) or die ('Error connecting to mysql');
